@@ -1,0 +1,51 @@
+
+ <!-- Header File  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampSpot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand mb-0 h1" href="/">CampSpot</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+
+  <ul class="nav navbar-nav navbar-right">
+   <% if (!currentuser){ %>
+    <li class="nav-item">
+      <a class="nav-link" href="/register"> SignUp</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/login"> Login</a>
+        </li>
+   <% }else{ %>
+    <li class="nav-item">
+      <a class="nav-link" >Signed in as : <%=currentuser.username%></a>
+      </li>
+    <li class="nav-item">
+          <a class="nav-link" href="/logout">LogOut</a>
+      </li>
+  <%  } %>
+  </ul>
+    </div>
+    </div>
+  </nav>
+ <div class="container">
+   <% if (error && error.length >0) { %>
+   <div class="alert alert-danger">
+     <%=error%>
+   </div>
+  <% } %> 
+  <% if (success && success.length >0) { %>
+   <div class="alert alert-success">
+    <%=success%>
+  </div>
+  <% } %>
+ </div>

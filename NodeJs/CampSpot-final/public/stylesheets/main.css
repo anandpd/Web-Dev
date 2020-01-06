@@ -1,0 +1,28 @@
+.thumnail img{
+    width: 100%;
+}
+.thumnail{
+    padding: 0;
+}
+.thumbnail .caption-full{
+    padding: 9px;
+}
+#deleteform{
+    display: inline;
+}
+.deleteform{
+    display: inline;
+}
+.container img {
+    max-height: 100%;
+    max-width: 100%; 
+    }
+.thumbnail{
+    border: 2px solid #DBD1CF;
+    box-shadow:2px beige;
+    margin-bottom: 10%;  
+   }
+.jumbotron{
+   margin-top: 30px;
+   margin-bottom: 30px;
+     } 
