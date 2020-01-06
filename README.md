@@ -1,2 +1,2 @@
 # web
-Caontains all work on web-development
+Contains all work on web-development
