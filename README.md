@@ -1,3 +1,3 @@
 # web
 
-Contains all work on web-development
+Web developement using HTML, css, Bootstrap, javascript, jquery, Nodejs, and MongoDb.
